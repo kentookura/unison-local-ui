@@ -9,7 +9,7 @@ import glob from "glob";
 import fs from "fs/promises";
 
 glob(
-  "elm-stuff/gitdeps/github.com/unisonweb/ui-core/**/*.css",
+  "elm-stuff/gitdeps/github.com/kentookura/ui-core/**/*.css",
   (err, uiCoreFiles) => {
     if (err) {
       console.error(err);

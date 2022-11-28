@@ -4,7 +4,7 @@ const FileManagerPlugin = require("filemanager-webpack-plugin");
 const postcssPresetEnv = require("postcss-preset-env");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
-const UI_CORE_SRC = "elm-stuff/gitdeps/github.com/unisonweb/ui-core/src";
+const UI_CORE_SRC = "elm-stuff/gitdeps/github.com/kentookura/ui-core/src";
 
 const unisonLocalCfg = {
   module: {

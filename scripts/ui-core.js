@@ -17,7 +17,7 @@ function replaceElmGitSha(sha) {
           ...json["git-dependencies"],
           direct: {
             ...json["git-dependencies"].direct,
-            ["https://github.com/unisonweb/ui-core"]: sha,
+            ["https://github.com/kentookura/ui-core"]: sha,
           },
         },
       };
@@ -31,7 +31,7 @@ function getLatestUICoreSha() {
 
   return octokit
     .request("GET /repos/{owner}/{repo}/commits", {
-      owner: "unisonweb",
+      owner: "kentookura",
       repo: "ui-core",
       number: 1,
     })
@@ -41,7 +41,7 @@ function getLatestUICoreSha() {
 function elmGitInstall() {
   return run("npx elm-git-install")
     .then(() =>
-      fs.readFile("./elm-stuff/gitdeps/github.com/unisonweb/ui-core/elm.json")
+      fs.readFile("./elm-stuff/gitdeps/github.com/kentookura/ui-core/elm.json")
     )
     .then(JSON.parse)
     .then((uiCore) => {

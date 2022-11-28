@@ -1,7 +1,7 @@
 {
     "type": "application",
     "source-directories": [
-        "elm-stuff/gitdeps/github.com/unisonweb/ui-core/src",
+        "elm-stuff/gitdeps/github.com/kentookura/ui-core/src",
         "src"
     ],
     "elm-version": "0.19.1",
@@ -28,7 +28,8 @@
             "mgold/elm-nonempty-list": "4.2.0",
             "noahzgordon/elm-color-extra": "1.0.2",
             "stoeffel/set-extra": "1.2.3",
-            "wernerdegroot/listzipper": "4.0.0"
+            "wernerdegroot/listzipper": "4.0.0",
+            "yotamDvir/elm-katex": "2.0.2"
         },
         "indirect": {
             "elm/bytes": "1.0.8",
